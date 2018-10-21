@@ -1,0 +1,13 @@
+Node{
+    data=Trzy,
+    next=Node{
+        data=Dwa,
+        next=Node{
+            data=Jeden,
+            next=Node{
+            data=null,
+            next=null
+            }
+        }
+    }
+}

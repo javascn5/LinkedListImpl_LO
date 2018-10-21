@@ -13,10 +13,12 @@ public class Main {
 
         CustomList<String> customList = new CustomLinkedList<>();
 
-        customList.add("Jeden");
-        customList.add("Dwa");
-        customList.add("Trzy");
-        customList.add("Cztery");
+        customList.addTail("Jeden");
+        customList.addTail("Dwa");
+        customList.addTail("Trzy");
+        customList.addTail("Cztery");
+
+        customList.printList();
 
         List<String> list = new LinkedList<>();
 

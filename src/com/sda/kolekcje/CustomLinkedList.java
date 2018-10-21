@@ -20,6 +20,35 @@ public class CustomLinkedList<E> implements CustomList<E> {
         size++;
     }
 
+    public void printList(){
+        Node tmp = head;
+        while (tmp != null){
+            System.out.println(tmp.data);
+            tmp = tmp.next;
+        }
+
+    }
+
+    @Override
+    public void addTail(E e){
+       Node tmp = head;
+       while(tmp.next!=null){
+           tmp = tmp.next;
+       }
+       tmp.next = new Node(e);
+       System.out.println(tmp);
+    }
+
+    @Override
+    public void find(int index) {
+
+        Node tmp = head;
+        for(int i=0; i<index; i++){
+            tmp = tmp.next;
+        }
+        System.out.println(tmp);
+    }
+
     @Override
     public E get(int index) {
         return null;
